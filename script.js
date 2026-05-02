@@ -1,5 +1,6 @@
-const showError = false; // change to true to simulate server crash
+const params = new URLSearchParams(window.location.search);
+const status = params.get("status");
 
-if (showError) {
+if (status === "error") {
 window.location.href = "error.html";
 }
