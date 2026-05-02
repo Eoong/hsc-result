@@ -1,6 +1,5 @@
-const params = new URLSearchParams(window.location.search);
-const status = params.get("status");
+const forceError = false; // toggle here
 
-if (status === "error") {
+if (forceError) {
 window.location.href = "error.html";
 }
